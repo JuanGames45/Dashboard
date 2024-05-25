@@ -1,9 +1,64 @@
 <html>
-    <head></head>
+    <head>
+        <title>Nueva pestaña</title>
+    </head>
     <body>
-    <form action="https://search.brave.com/search" method="get">
-        <input type="text" name="q" placeholder="Buscar">
-        <input type="submit" value="Search">
-    </form>
+        <style>
+            
+
+            body{
+                background-color: #1d8fa8;
+                box-sizing: border-box;
+               
+            }
+
+            .wrapper{
+                position: relative;
+                height:400px;
+                
+                background-color: white;
+                width:70%;
+                top:50%; left:50%;
+                transform:translate(-50%, -50%)
+                
+            }
+            .searchbar{
+                width: 100% ;
+                height: 40px;
+                border-radius: 5px;
+                padding: 20px;
+            }
+
+            .searchwrapper{
+                margin-top: auto;
+            }
+
+            .searchform{
+                margin:auto;
+                width:80%;
+            }
+
+            ul{
+                list-style: none;
+            }
+        </style>
+        <!-- Search Bar-->
+        <div class="wrapper">
+        <div class="searchwrapper">
+            <form  class="searchform" action="https://search.brave.com/search" method="get">
+            <input class="searchbar" type="text" name="q" placeholder="Buscar">
+            </div>    
+            </form>
+
+    <ul class="sites-list">
+        <li class="site">Youtube</li>
+        <li class="site">Twitter</li>
+        <li class="site">Bluesky</li>
+        <li class="site">Deviantart</li>
+        <li class="site">Spacehey</li>
+        <li class="site">Newgrounds</li>
+    </ul>
+
+    </div>
     </body>
 </html>
