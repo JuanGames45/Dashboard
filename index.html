@@ -1,64 +1,215 @@
 <html>
     <head>
         <title>Nueva pestaña</title>
+        <link rel="icon" type="image/x-con" 
+        href="https://www.juangames.com/media/images/favicon.png">
     </head>
     <body>
         <style>
-            
+            /* Hover #1a8197*/
 
             body{
                 background-color: #1d8fa8;
                 box-sizing: border-box;
-               
+               text-align: center;
             }
 
             .wrapper{
-                position: absolute;
-                height:400px;
-                
-                background-color: white;
-                width:70%;
+                position: relative;
+                height:250px;                
+                width:80%;
                 top:50%; left:50%;
-                transform:translate(-50%, -50%)
-                
+                transform:translate(-50%, -50%);
+                margin-top: 90px;             
             }
             .searchbar{
+                background-image: ('http://kodyrabatowe.wp.pl/img/ico/search_gr.png');
                 width: 100% ;
-                height: 40px;
-                border-radius: 5px;
+                height: 50px;
+                border-radius: 10px;
                 padding: 20px;
+                margin-top: 3%;
+                margin-bottom: 3%;
             }
 
             .searchwrapper{
                 margin-top: auto;
+                
             }
 
             .searchform{
                 margin:auto;
                 width:80%;
             }
-
-            ul{
-                list-style: none;
+            
+            .linkswrapper{
+                margin:auto;
+                display: block;
+                height: 162px;
+                margin-left: auto;
+                margin-right: auto;
             }
+            .link{
+                background-color: #1d8fa8;
+                border-radius: 10px;
+                display: inline-block;
+                width: 110px;
+                height: 120px;
+                padding-top: 10px;
+            }
+            .link:hover{
+                background-color: #1a8197;
+            }
+            .link:active{
+                filter: brightness(90%);
+            }
+            .iconwrapper{
+                background-color: white;
+                width:80px;
+                height:80px;
+                margin: auto;
+                border-radius: 10px;
+            }
+            .icon{
+                width: 50px;
+                height: 50px;
+                margin-top: 15px;
+            }
+            .button{
+                margin: auto;
+                width: auto;
+            }
+            .text{
+                height:35px;
+            }
+            a{
+                color: inherit;
+                text-decoration: none;
+            }
+            
         </style>
         <!-- Search Bar-->
         <div class="wrapper">
         <div class="searchwrapper">
-            <form  class="searchform" action="https://search.brave.com/search" method="get">
-            <input class="searchbar" type="text" name="q" placeholder="Buscar">
-            </div>    
+            <form  class="searchform" action="https://search.brave.com/search" 
+            method="get">
+            <input class="searchbar" type="text" name="q" placeholder="Buscar"> 
             </form>
+        </div>  
 
-    <button><a href="https://www.youtube.com">Youtube</a></button>
-    <button><a href="https://twitter.com/home">Twitter</a></button>
-    <button><a href="https://bsky.app/">Bluesky</a></button>
-    <button><a href="https://www.deviantart.com/">Deviantart</a></button>
-    <button><a href="https://spacehey.com/home">Spacehey</a></button>
-    <button><a href="https://www.newgrounds.com/">Newgrounds</a></button>
-    <button><a href="https://habitica.com/">Habitica</a></button>
-    <button><a href="https://www.wordreference.com/">Wordreference</a></button>
+        <div class="linkswrapper">
 
+            <div class="link"><a href="https://www.youtube.com">
+                
+                <div class="button">
+                <div class="iconwrapper">
+                    <img 
+                    src="https://dashboard.juangames.com/Media/youtube_old.webp" 
+                    class="icon">
+                </div>
+                <div class="text">
+                <p>Youtube</p>
+                </div>
+                </div>
+                
+            </div></a>
+            <div class="link"><a href="https://twitter.com/home">
+                
+                <div class="button">
+                <div class="iconwrapper">
+                    <img 
+                    src="https://dashboard.juangames.com/Media/Logo_of_Twitter.svg" 
+                    class="icon">
+                </div>
+                <div class="text">
+                <p>Twitter</p>
+                </div>
+                </div>
+                
+            </div></a>
+            <div class="link"><a href="https://www.bsky.app">
+                
+                <div class="button">
+                <div class="iconwrapper">
+                    <img src="https://dashboard.juangames.com/Media/Bluesky_Logo.svg" 
+                    class="icon">
+                </div>
+                <div class="text">
+                <p>Bluesky</p>
+                </div>
+                </div>
+                
+            </div></a>
+            <div class="link"><a href="https://www.deviantart.com">
+                
+                <div class="button">
+                <div class="iconwrapper">
+                    <img 
+                    src="https://dashboard.juangames.com/Media/DeviantArt_logo.png" 
+                    class="icon">
+                </div>
+                <div class="text">
+                <p>Deviantart</p>
+                </div>
+                </div>
+                
+            </div></a>
+            <div class="link"><a href="https://www.spacehey.com">
+                
+                <div class="button">
+                <div class="iconwrapper">
+                    <img src="https://dashboard.juangames.com/Media/spacehey_icon.svg"
+                    class="icon">
+                </div>
+                <div class="text">
+                <p>Spacehey</p>
+                </div>
+                </div>
+                
+            </div></a>
+            <div class="link"><a href="https://www.newgrounds.com">
+                
+                <div class="button">
+                <div class="iconwrapper">
+                    <img src="https://dashboard.juangames.com/Media/ng_tank.png" 
+                    class="icon">
+                </div>
+                <div class="text">
+                <p>Newgrounds</p>
+                </div>
+                </div>
+                
+            </div></a>
+            <div class="link"><a href="https://www.habitica.com">
+                
+                <div class="button">
+                <div class="iconwrapper">
+                    <img src="https://dashboard.juangames.com/Media/icon.png" 
+                    class="icon">
+                </div>
+                <div class="text">
+                <p>Habitica</p>
+                </div>
+                </div>
+                
+            </div></a>
+            <div class="link"><a href="https://www.wordreference.com">
+                
+                <div class="button">
+                <div class="iconwrapper">
+                    <img src="https://dashboard.juangames.com/Media/wricon.svg" 
+                    class="icon">
+                </div>
+                <div class="text">
+                <p>Wordreference</p>
+                </div>
+                </div>
+                
+            </div></a>
+
+        </div>
+
+        </div>
     </div>
     </body>
 </html>
